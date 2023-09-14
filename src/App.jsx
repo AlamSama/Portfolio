@@ -30,7 +30,7 @@ function App() {
   }
 
   return (
-    <div className='dark:bg-black bg-gray-200 overflow-hidden'>
+    <div className='dark:bg-black bg-gray-200 overflow-hidden' ref={refHome}>
       <Header handleLink={hanldeLink} home={refHome} about={refAbout} certificate={refCertificate} project={refProject} openBar={openBar} setOpenBar={setOpenBar} />
       <About ref={refAbout} />
       <Certificate ref={refCertificate} />

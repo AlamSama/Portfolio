@@ -24,25 +24,25 @@ function Hero() {
 
                 <div className="lg:flex lg:flex-row-reverse lg:items-center lg:justify-between lg:w-full">
 
-                    <div className="w-full h-[310px] lg:w-full lg:h-full">
-                        <img src={Logo1} alt="" className="lg:w-[650px] lg:h-[650px]" />
+                    <div className="w-full h-[310px] md:w-full md:h-full md:flex md:justify-center md:mt-6">
+                        <img src={Logo1} alt="" className="md:w-[600px] md:h-[600px] lg:w-[650px] lg:h-[650px] 2xl:w-[750px] 2xl:h-[750px]" />
                     </div>
 
-                    <div className="w-full text-center lg:text-left lg:pl-12 lg:pb-12 font-extrabold dark:text-white font-poppins">
-                        <h3 className="lg:text-xl text-teal-400">Hi There</h3>
-                        <h3 className="text-4xl lg:text-7xl">I'm Restu Alam</h3>
-                        <p className="text-2xl text-left pl-8 lg:pl-0 lg:text-4xl mt-1 lg:mt-4 text-teal-400"><span className="dark:text-white">I'm a</span> {text}<Cursor cursorColor='teal' cursorBlinking='true' /></p>
-                        <p className="mt-4 lg:text-xl lg:mt-5 font-normal">Here You Will Find My Works Reflecting Dedication And Expertise In Developing Technology Solutions</p>
+                    <div className="w-full text-center lg:text-left lg:pl-24 2xl:pl-40 2xl:pb-0 lg:pb-12 font-extrabold dark:text-white font-poppins">
+                        <h3 className="md:text-xl 2xl:text-2xl text-teal-400">Hi There</h3>
+                        <h3 className="text-4xl md:text-7xl 2xl:text-8xl 2xl:mt-4">I'm Restu Alam</h3>
+                        <p className="text-2xl md:text-4xl 2xl:text-5xl text-left pl-8 lg:pl-0 mt-1 lg:mt-4 2xl:mt-8 text-teal-400"><span className="dark:text-white">I'm a</span> {text}<Cursor cursorColor='teal' cursorBlinking='true' /></p>
+                        <p className="mt-4 md:text-xl 2xl:text-2xl lg:mt-5 font-normal 2xl:mt-8">Here You Will Find My Works Reflecting Dedication And Expertise In Developing Technology Solutions</p>
 
 
-                        <div className="flex justify-center lg:justify-start items-center gap-9 lg:gap-8 text-teal-40 text-3xl mt-6 lg:text-4xl lg:mt-12 text-teal-400">
+                        <div className="flex justify-center lg:justify-start items-center gap-9 lg:gap-8 text-teal-40 text-3xl mt-6 md:text-4xl md:mt-12 text-teal-400">
                             <HiOutlineMail className="cursor-pointer hover:bg-teal-700 transition-all rounded-full border-2 border-teal-400 p-1" />
                             <AiOutlineInstagram className="cursor-pointer hover:bg-teal-700 transition-all rounded-full border-2 border-teal-400 p-1" />
                             <TbBrandGithub className="cursor-pointer hover:bg-teal-700 transition-all rounded-full border-2 border-teal-400 p-1" />
                         </div>
 
                         <div className="flex justify-center lg:justify-start">
-                            <div className="bg-teal-400 px-8 py-2 lg:py-3 text-black flex items-center gap-2 text-xl rounded-xl mt-4 lg:mt-6 cursor-pointer relative after:bg-gradient-to-r after:from-teal-700 after:to-teal-400 after:w-0 after:transition-all hover:after:w-full after:h-full after:rounded-xl after:absolute after:left-0">
+                            <div className="bg-teal-400 px-8 py-2 md:py-3 text-black flex items-center gap-2 text-xl rounded-xl mt-4 md:mt-6 cursor-pointer relative after:bg-gradient-to-r after:from-teal-700 after:to-teal-400 after:w-0 after:transition-all hover:after:w-full after:h-full after:rounded-xl after:absolute after:left-0">
                                 <p className="z-10">Resume</p>
                                 <MdOutlineSaveAlt className="z-10" />
                             </div>

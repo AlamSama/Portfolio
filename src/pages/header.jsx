@@ -51,16 +51,16 @@ function Header(props) {
 
   return (
     <>
-      <div className={`bg-teal-400 dark:bg-black z-50 lg:text-lg flex items-center justify-around py-4 ${headerfix === true ? 'fixed top-0 right-0 left-0 shadow-md shadow-teal-400' : ''}`}>
+      <div className={`bg-teal-400 dark:bg-black z-50 lg:text-lg flex items-center justify-around md:justify-between md:px-12 2xl:justify-between 2xl:px-32 lg:px-0 lg:justify-around py-4 ${headerfix === true ? 'fixed top-0 right-0 left-0 shadow-md shadow-teal-400' : ''}`}>
         
-        <div className="logo font-bold dark:text-teal-400 text-white text-xl lg:text-4xl">
+        <div className="logo font-bold dark:text-teal-400 text-white text-xl md:text-3xl lg:text-4xl">
           <h3>Restu Alam</h3>
         </div>
 
 
-        <nav className={`${props.openBar ? 'py-4 h-[230px]' : 'h-0'} lg:static lg:h-[44px] absolute left-0 right-0 top-11 z-10 overflow-hidden transition-all duration-300 px-2 bg-teal-400 dark:bg-black lg:bg-transparent lg:dark:bg-transparent`}>
-          <ul className='text-white lg:flex lg:justify-between lg:h-full lg:items-center lg:gap-6'>
-            <li className='px-1 py-1 rounded-md border-2 border-transparent hover:shadow-sm dark:hover:shadow-teal-400 dark:hover:text-teal-400 hover:border-2 dark:hover:border-teal-400 hover:border-white hover:shadow-white cursor-pointer'>Home</li>
+        <nav className={`${props.openBar ? 'py-4 md:py-10 h-[230px] md:h-[250px]' : 'h-0'} lg:static lg:h-[44px] absolute left-0 right-0 top-11 md:top-12 z-10 overflow-hidden transition-all duration-300 px-2 bg-teal-400 dark:bg-black md:px-6 lg:bg-transparent lg:dark:bg-transparent`}>
+          <ul className='text-white md:text-xl lg:flex lg:justify-between lg:h-full lg:items-center lg:gap-6'>
+            <li className='px-1 py-1 rounded-md border-2 border-transparent hover:shadow-sm dark:hover:shadow-teal-400 dark:hover:text-teal-400 hover:border-2 dark:hover:border-teal-400 hover:border-white hover:shadow-white cursor-pointer' onClick={() => props.handleLink(props.home)}>Home</li>
             <li className='px-1 py-1 mt-3 lg:mt-0 rounded-md border-2 border-transparent hover:shadow-sm dark:hover:shadow-teal-400 dark:hover:text-teal-400 hover:border-2 dark:hover:border-teal-400 hover:border-white hover:shadow-white cursor-pointer' onClick={() => props.handleLink(props.about)} >About</li>
             <li className='px-1 py-1 mt-3 lg:mt-0 rounded-md border-2 border-transparent hover:shadow-sm dark:hover:shadow-teal-400 dark:hover:text-teal-400 hover:border-2 dark:hover:border-teal-400 hover:border-white hover:shadow-white cursor-pointer' onClick={() => props.handleLink(props.certificate)} >Certificate</li>
             <li className='px-1 py-1 mt-3 lg:mt-0 rounded-md border-2 border-transparent hover:shadow-sm dark:hover:shadow-teal-400 dark:hover:text-teal-400 hover:border-2 dark:hover:border-teal-400 hover:border-white hover:shadow-white cursor-pointer' onClick={() => props.handleLink(props.project)} >Project</li>
@@ -74,14 +74,11 @@ function Header(props) {
         </div>
 
 
-        <div className="bar lg:hidden" onClick={() => props.setOpenBar((prev) => !prev)}>
+        <div className="bar lg:hidden cursor-pointer" onClick={() => props.setOpenBar((prev) => !prev)}>
           <div className={`${props.openBar ? '-rotate-45 translate-y-[6px]' : ''} transition-all w-6 h-[2px] bg-white`}></div>
           <div className={`${props.openBar ? 'translate-x-12 opacity-0' : ''} transition-all w-4 h-[2px] translate-x-[7px] mt-1 bg-white`}></div>
           <div className={`${props.openBar ? 'rotate-45 -translate-y-[6px]' : ''} transition-all w-6 h-[2px] mt-1 bg-white`}></div>
         </div>
-
-       
-
 
       </div>
 
